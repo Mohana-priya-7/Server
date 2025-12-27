@@ -17,7 +17,6 @@ function Signup() {
       alert("Please fill in all fields");
       return;
     }
-
     axios.post("https://server-1cdd.onrender.com/register", { name, email, password })
       .then((res) => {
         console.log("Registration Response:", res.data);
