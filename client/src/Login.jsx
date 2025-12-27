@@ -9,14 +9,12 @@ function Login() {
 
   const handleLogin = (e) => {
     e.preventDefault();
-
     // Basic validation
     if (!email || !password) {
       alert("Please fill in all fields");
       return;
     }
-
-    axios.post("http://localhost:3001/login", { email, password })
+    axios.post("https://server-1cdd.onrender.com/login", { email, password })
       .then((res) => {
         console.log("Login Response:", res.data);
         if (res.data.message === "Login successful") {

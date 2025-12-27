@@ -18,7 +18,7 @@ function Signup() {
       return;
     }
 
-    axios.post("http://localhost:3001/register", { name, email, password })
+    axios.post("https://server-1cdd.onrender.com/register", { name, email, password })
       .then((res) => {
         console.log("Registration Response:", res.data);
         if (res.data.message === "Registration successful") {
