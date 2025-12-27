@@ -1,0 +1,117 @@
+/* Set background gradient for body */
+body
+{
+  background-color: #afc1dd;
+  background-image: linear-gradient(315deg, #c1d1e9 45%, #7fb3fc 130%);
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+  overflow: hidden;
+  margin:0;
+}
+.auth-container 
+{
+  background: #fff;
+  padding: 1.2rem 1rem;
+  border-radius: 1.2rem;
+  box-shadow: 0 8px 32px rgba(127,179,252,0.12), 0 1.5px 6px rgba(127,179,252,0.06);
+  width: 130%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  margin: 1rem 0.5rem;
+}
+.auth-title 
+{
+  text-align: center;
+  font-weight: 600;
+  font-size: 2rem;
+  color: black;
+  margin-bottom: 0.5rem;
+}
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+.auth-group {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  margin-bottom: 0.1rem;
+}
+.auth-form label {
+  font-weight: 500;
+  margin-bottom: 0.3rem;
+  text-align: left;
+  padding-left: 0.2rem;
+}
+.auth-input {
+  padding: 0.5rem 0.7rem;
+  border: 1.2px solid #5d9cec;
+  border-radius: 1.2rem;
+  font-size: 1rem;
+  outline: none;
+  transition: border 0.2s, box-shadow 0.2s;
+  margin-bottom: 0.2rem;
+}
+.auth-input[type="password"] {
+  margin-bottom: 0.7rem;
+}
+.auth-input:focus {
+  border: 2px solid #5d9cec;
+  box-shadow: 0 0 0 2px #5d9cec33;
+}
+.auth-btn {
+  background: #d38ff0;
+  color: #fff;
+  border: 1.5px solid #d38ff0;
+  border-radius: 2rem;
+  padding: 0.5rem 0;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s, border 0.2s;
+  box-shadow: 0 2px 8px rgba(127,179,252,0.12);
+  cursor: pointer;
+}
+.auth-btn:hover, .auth-btn:focus {
+  background: #b86ad6;
+  color: #fff;
+  border: 1.5px solid #b86ad6;
+  box-shadow: 0 4px 16px rgba(127,179,252,0.18);
+}
+.auth-link-btn {
+  background: #d899f3;
+  color: #fff;
+  border: none;
+  border-radius: 2rem;
+  padding: 0.4rem 0;
+  font-weight: 500;
+  font-size: 1rem;
+  text-align: center;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  display: block;
+  box-shadow: 0 2px 8px rgba(127,179,252,0.12);
+}
+.auth-link-btn:hover, .auth-link-btn:focus {
+  background: #b86ad6;
+  color: #fff;
+}
+@media (max-width: 500px) {
+  .auth-container {
+    padding: 1.5rem 0.7rem;
+    max-width: 98vw;
+  }
+  .auth-title {
+    font-size: 1.4rem;
+  }
+}
+/* Make all paragraphs more compact */
+p {
+  margin: 0.1em 0;
+  padding: 0.1em 0;
+}
