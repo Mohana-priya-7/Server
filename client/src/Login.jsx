@@ -14,7 +14,7 @@ function Login() {
       alert("Please fill in all fields");
       return;
     }
-    axios.post("https://server-1cdd.onrender.com/login", { email, password })
+    axios.post("https://server-1cdd.onrender.com/login",{email, password })
       .then((res) => {
         console.log("Login Response:", res.data);
         if (res.data.message === "Login successful") {
